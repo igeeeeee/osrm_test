@@ -15,7 +15,7 @@ chmod +x build.sh
 docker run --rm -it -p 5000:5000 -v "$PWD:/data" ghcr.io/project-osrm/osrm-backend:v5.27.1 osrm-routed --algorithm mld /data/extract/kanto_mainland.osrm
 ```
 
-#テスト
+# テスト
 別のシェルを開いて
 ```bash
 curl "http://localhost:5000/nearest/v1/driving/139.7670,35.6814?number=1"
